@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BB000000"
+    android:padding="@dimen/widget_margin"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/widget_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Monday"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+    <ListView
+        android:id="@+id/widget_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <TextView
+        android:id="@+id/empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="No Classes Today"/>
+
+</LinearLayout>

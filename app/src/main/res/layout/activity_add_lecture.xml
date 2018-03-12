@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.ajish.timetable.AddLectureActivity">
+    <EditText
+        android:id="@+id/add_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Subject"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/add_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"/>
+        <Button
+            android:id="@+id/change_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Change Time"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/add_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"/>
+        <Button
+            android:id="@+id/change_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Change Time"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_new_lecture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"/>
+</LinearLayout>
